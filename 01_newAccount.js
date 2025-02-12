@@ -46,7 +46,7 @@ async function main() {
   const { mnemonic, entropy } = _generateMnemonic();
   console.log(`WARNING! Never disclose your Seed Phrase:\n ${mnemonic}`); 
 
-  const hdRootKey = _getHdRootKey(entropy);
+  const hdRootKey = _getHdRootKey(entropy); 
 
   const accountOneIndex = 0;
   const accountOnePrivateKey = _generatePrivateKey(hdRootKey, accountOneIndex);  
