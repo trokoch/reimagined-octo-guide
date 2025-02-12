@@ -1,6 +1,6 @@
 const { 
   generateMnemonic,
-  mnemonicToEntropy,
+  mnemonicToEntropy, 
 } = require("ethereum-cryptography/bip39"); 
 const { wordlist } = require("ethereum-cryptography/bip39/wordlists/english");
 const { HDKey } = require("ethereum-cryptography/hdkey");
