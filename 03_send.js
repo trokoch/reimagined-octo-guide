@@ -6,8 +6,8 @@ async function main(_receiverAddress, _ethAmount) {
   const provider = getDefaultProvider(network);
 
   const accountRawData = readFileSync("account 1.json", "utf8");
-  const accountData = JSON.parse(accountRawData);
-
+  const accountData = JSON.parse(accountRawData); 
+ 
   const privateKey = Object.values(accountData.privateKey);
 
   const signer = new Wallet(privateKey, provider);
