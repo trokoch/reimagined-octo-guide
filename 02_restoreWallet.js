@@ -19,7 +19,7 @@ async function main(_mnemonic) {
     publicKey: publicKey,
     address: address,
   };
-  const accountOneData = JSON.stringify(accountOne);
+  const accountOneData = JSON.stringify(accountOne); 
   writeFileSync("account 1.json", accountOneData);
 }
 
