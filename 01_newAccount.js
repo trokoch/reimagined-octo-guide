@@ -54,7 +54,7 @@ async function main() {
   const accountOnePublicKey = _getPublicKey(accountOnePrivateKey);
 
   const accountOneAddress = _getEthAddress(accountOnePublicKey);
-  console.log(`Account One Wallet Address: 0x${bytesToHex(accountOneAddress)}`);
+  console.log(`Account One Wallet Address: 0x${bytesToHex(accountOneAddress)}`); 
 
   _store(accountOnePrivateKey, accountOnePublicKey, accountOneAddress);
 }
