@@ -13,7 +13,7 @@ async function main(_receiverAddress, _ethAmount) {
   const signer = new Wallet(privateKey, provider);  
      
   const transaction = await signer.sendTransaction({
-    to: _receiverAddress,
+    to: _receiverAddress, 
     value: utils.parseEther(_ethAmount), 
   }); 
 
