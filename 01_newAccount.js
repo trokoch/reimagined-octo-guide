@@ -44,7 +44,7 @@ function _store(_privateKey, _publicKey, _address) {
 
 async function main() {
   const { mnemonic, entropy } = _generateMnemonic();
-  console.log(`WARNING! Never disclose your Seed Phrase:\n ${mnemonic}`);
+  console.log(`WARNING! Never disclose your Seed Phrase:\n ${mnemonic}`); 
 
   const hdRootKey = _getHdRootKey(entropy);
 
