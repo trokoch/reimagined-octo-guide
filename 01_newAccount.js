@@ -49,7 +49,7 @@ async function main() {
   const hdRootKey = _getHdRootKey(entropy);
 
   const accountOneIndex = 0;
-  const accountOnePrivateKey = _generatePrivateKey(hdRootKey, accountOneIndex);
+  const accountOnePrivateKey = _generatePrivateKey(hdRootKey, accountOneIndex); 
 
   const accountOnePublicKey = _getPublicKey(accountOnePrivateKey);
 
