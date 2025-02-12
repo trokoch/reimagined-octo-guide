@@ -17,7 +17,7 @@ async function main(_mnemonic) {
   const accountOne = {
     privateKey: privateKey,
     publicKey: publicKey,
-    address: address,
+    address: address, 
   };
   const accountOneData = JSON.stringify(accountOne); 
   writeFileSync("account 1.json", accountOneData);
