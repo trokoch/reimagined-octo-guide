@@ -1,4 +1,4 @@
-const {
+const { 
   generateMnemonic,
   mnemonicToEntropy,
 } = require("ethereum-cryptography/bip39"); 
