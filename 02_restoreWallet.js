@@ -24,7 +24,7 @@ async function main(_mnemonic) {
 }
 
 main(process.argv[2])
-  .then(() => process.exit(0))
+  .then(() => process.exit(0)) 
   .catch((error) => {
     console.error(error);
     process.exit(1);
