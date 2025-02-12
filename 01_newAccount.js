@@ -7,7 +7,7 @@ const { HDKey } = require("ethereum-cryptography/hdkey");
 const { getPublicKey, ecdsaSign } = require("ethereum-cryptography/secp256k1"); 
 const { keccak256 } = require("ethereum-cryptography/keccak");
 const { bytesToHex } = require("ethereum-cryptography/utils");
-const { writeFileSync } = require("fs");
+const { writeFileSync } = require("fs"); 
 
 function _generateMnemonic() {
   const strength = 256; // 256 bits, 24 words; default is 128 bits,  12 words
