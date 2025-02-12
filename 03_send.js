@@ -2,7 +2,7 @@ const { getDefaultProvider, Wallet, utils } = require("ethers");
 const { readFileSync } = require("fs");
 
 async function main(_receiverAddress, _ethAmount) {
-  const network = "goerli"; 
+  const network = "goerli";  
   const provider = getDefaultProvider(network); 
 
   const accountRawData = readFileSync("account 1.json", "utf8"); 
