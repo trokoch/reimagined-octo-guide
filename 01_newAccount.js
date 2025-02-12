@@ -17,7 +17,7 @@ function _generateMnemonic() {
 }
 
 function _getHdRootKey(_mnemonic) {
-  return HDKey.fromMasterSeed(_mnemonic);
+  return HDKey.fromMasterSeed(_mnemonic); 
 } 
 
 function _generatePrivateKey(_hdRootKey, _accountIndex) { 
