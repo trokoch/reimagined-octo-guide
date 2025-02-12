@@ -22,7 +22,7 @@ async function main(_mnemonic) {
   const accountOneData = JSON.stringify(accountOne); 
   writeFileSync("account 1.json", accountOneData);
 }
-
+ 
 main(process.argv[2])
   .then(() => process.exit(0)) 
   .catch((error) => {
