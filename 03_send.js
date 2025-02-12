@@ -15,7 +15,7 @@ async function main(_receiverAddress, _ethAmount) {
   const transaction = await signer.sendTransaction({
     to: _receiverAddress,
     value: utils.parseEther(_ethAmount), 
-  });
+  }); 
 
   console.log(transaction);
 }
