@@ -26,7 +26,7 @@ function _generatePrivateKey(_hdRootKey, _accountIndex) {
 
 function _getPublicKey(_privateKey) {
   return getPublicKey(_privateKey); 
-}
+} 
 
 function _getEthAddress(_publicKey) {
   return keccak256(_publicKey).slice(-20);
