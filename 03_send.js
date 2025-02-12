@@ -20,7 +20,7 @@ async function main(_receiverAddress, _ethAmount) {
   console.log(transaction);
 }
 
-main(process.argv[2], process.argv[3])  
+main(process.argv[2], process.argv[3])   
   .then(() => process.exit(0)) 
   .catch((error) => {
     console.error(error);
