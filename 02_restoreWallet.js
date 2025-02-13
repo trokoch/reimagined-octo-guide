@@ -4,7 +4,7 @@ const { HDKey } = require("ethereum-cryptography/hdkey");
 const { getPublicKey } = require("ethereum-cryptography/secp256k1"); 
 const { keccak256 } = require("ethereum-cryptography/keccak"); 
 const { bytesToHex } = require("ethereum-cryptography/utils");
-const { writeFileSync } = require("fs"); 
+const { writeFileSync } = require("fs");  
 
 async function main(_mnemonic) {
   const entropy = mnemonicToEntropy(_mnemonic, wordlist);
