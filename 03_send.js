@@ -9,7 +9,7 @@ async function main(_receiverAddress, _ethAmount) {
   const accountData = JSON.parse(accountRawData);    
    
   const privateKey = Object.values(accountData.privateKey);  
-     
+      
   const signer = new Wallet(privateKey, provider);     
        
   const transaction = await signer.sendTransaction({ 
