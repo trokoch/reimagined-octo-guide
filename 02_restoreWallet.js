@@ -11,7 +11,7 @@ async function main(_mnemonic) {
   const hdRootKey = HDKey.fromMasterSeed(entropy);
   const privateKey = hdRootKey.deriveChild(0).privateKey;
   const publicKey = getPublicKey(privateKey);   
-  const address = keccak256(publicKey).slice(-20); 
+  const address = keccak256(publicKey).slice(-20);  
   console.log(`Account One Wallet Address: 0x${bytesToHex(address)}`);
 
   const accountOne = {
