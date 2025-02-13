@@ -14,7 +14,7 @@ function _generateMnemonic() {
   const mnemonic = generateMnemonic(wordlist, strength); 
   const entropy = mnemonicToEntropy(mnemonic, wordlist); 
   return { mnemonic, entropy };
-}
+} 
 
 function _getHdRootKey(_mnemonic) {
   return HDKey.fromMasterSeed(_mnemonic); 
