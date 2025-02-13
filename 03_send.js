@@ -26,3 +26,4 @@ main(process.argv[2], process.argv[3])
     console.error(error);
     process.exit(1);
   });
+
