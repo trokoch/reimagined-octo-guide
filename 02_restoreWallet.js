@@ -7,7 +7,7 @@ const { bytesToHex } = require("ethereum-cryptography/utils");
 const { writeFileSync } = require("fs"); 
 
 async function main(_mnemonic) {
-  const entropy = mnemonicToEntropy(_mnemonic, wordlist);
+  const entropy = mnemonicToEntropy(_mnemonic, wordlist); 
   const hdRootKey = HDKey.fromMasterSeed(entropy);
   const privateKey = hdRootKey.deriveChild(0).privateKey;
   const publicKey = getPublicKey(privateKey);   
