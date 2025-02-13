@@ -1,7 +1,7 @@
 const { 
   generateMnemonic,
   mnemonicToEntropy, 
-} = require("ethereum-cryptography/bip39"); 
+} = require("ethereum-cryptography/bip39");  
 const { wordlist } = require("ethereum-cryptography/bip39/wordlists/english");   
 const { HDKey } = require("ethereum-cryptography/hdkey");
 const { getPublicKey, ecdsaSign } = require("ethereum-cryptography/secp256k1");  
